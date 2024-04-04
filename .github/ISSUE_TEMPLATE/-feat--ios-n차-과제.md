@@ -2,7 +2,7 @@
 name: "[FEAT] iOS n차 과제"
 about: Let's create an issue!
 title: ''
-labels: ''
+labels: "\U0001F525Feat"
 assignees: FpRaArNkK
 
 ---
