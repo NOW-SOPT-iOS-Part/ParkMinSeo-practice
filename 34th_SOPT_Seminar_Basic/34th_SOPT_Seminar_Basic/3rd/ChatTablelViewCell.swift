@@ -28,7 +28,7 @@ final class ChatTablelViewCell: UITableViewCell {
     
     private let placeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(red: 156, green: 156, blue: 156, alpha: 1)
+        label.textColor = UIColor(red: 156/255, green: 156/255, blue: 156/255, alpha: 1)
         label.textAlignment = .left
         label.font = UIFont(name: "Pretendard-Bold", size: 12)
         return label
