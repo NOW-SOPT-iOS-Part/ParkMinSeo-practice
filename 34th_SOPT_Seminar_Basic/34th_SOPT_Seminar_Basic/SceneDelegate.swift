@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 2.
         self.window = UIWindow(windowScene: windowScene)
         // 3.
-        let navigationController = UINavigationController(rootViewController: ChatViewController())
+        let navigationController = UINavigationController(rootViewController: LoginViewController_4th())
         self.window?.rootViewController = navigationController
         // 4.
         self.window?.makeKeyAndVisible()
