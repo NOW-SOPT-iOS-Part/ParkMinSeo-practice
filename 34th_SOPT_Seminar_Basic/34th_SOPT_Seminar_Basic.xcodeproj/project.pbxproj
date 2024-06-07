@@ -40,6 +40,9 @@
 		88CF1AE12BB7D7CA0024E3DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88CF1AE02BB7D7CA0024E3DB /* Base */; };
 		88CF1AE92BB7E4AF0024E3DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF1AE82BB7E4AF0024E3DB /* LoginViewController.swift */; };
 		88CF1AEB2BB7E9220024E3DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF1AEA2BB7E9220024E3DB /* WelcomeViewController.swift */; };
+		88DF6ACC2C01BBF700E835E0 /* LoginViewController_DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF6ACB2C01BBF700E835E0 /* LoginViewController_DI.swift */; };
+		88DF6ACF2C01C7AD00E835E0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 88DF6ACE2C01C7AD00E835E0 /* RxCocoa */; };
+		88DF6AD12C01C7AD00E835E0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 88DF6AD02C01C7AD00E835E0 /* RxSwift */; };
 		88F56F142BDCC89F00042991 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 88F56F132BDCC89F00042991 /* Moya */; };
 		88F56F162BDCCA8000042991 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F56F152BDCCA8000042991 /* Config.swift */; };
 		88F56F182BDCCDE900042991 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F56F172BDCCDE900042991 /* NetworkResult.swift */; };
@@ -87,6 +90,7 @@
 		88CF1AE22BB7D7CA0024E3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88CF1AE82BB7E4AF0024E3DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		88CF1AEA2BB7E9220024E3DB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		88DF6ACB2C01BBF700E835E0 /* LoginViewController_DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DI.swift; sourceTree = "<group>"; };
 		88F56F152BDCCA8000042991 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		88F56F172BDCCDE900042991 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		88F56F192BDCCE6900042991 /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
@@ -105,8 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DF6AD12C01C7AD00E835E0 /* RxSwift in Frameworks */,
 				885EA8132BC1283D000AAFE0 /* SnapKit in Frameworks */,
 				880DC86D2BC68E8300B83A36 /* Then in Frameworks */,
+				88DF6ACF2C01C7AD00E835E0 /* RxCocoa in Frameworks */,
 				88F56F142BDCC89F00042991 /* Moya in Frameworks */,
 				885EA8152BC1283D000AAFE0 /* SnapKit-Dynamic in Frameworks */,
 			);
@@ -203,6 +209,7 @@
 		88CF1AD32BB7D7C90024E3DB /* 34th_SOPT_Seminar_Basic */ = {
 			isa = PBXGroup;
 			children = (
+				88DF6ACA2C01BBE600E835E0 /* 7th */,
 				88F56F112BDCBB2800042991 /* 4th */,
 				88A8947A2BD38685005CE2F6 /* 3rd */,
 				885EA80C2BC11478000AAFE0 /* 2nd */,
@@ -216,6 +223,14 @@
 				88CF1AE22BB7D7CA0024E3DB /* Info.plist */,
 			);
 			path = 34th_SOPT_Seminar_Basic;
+			sourceTree = "<group>";
+		};
+		88DF6ACA2C01BBE600E835E0 /* 7th */ = {
+			isa = PBXGroup;
+			children = (
+				88DF6ACB2C01BBF700E835E0 /* LoginViewController_DI.swift */,
+			);
+			path = 7th;
 			sourceTree = "<group>";
 		};
 		88F56F112BDCBB2800042991 /* 4th */ = {
@@ -257,6 +272,8 @@
 				885EA8142BC1283D000AAFE0 /* SnapKit-Dynamic */,
 				880DC86C2BC68E8300B83A36 /* Then */,
 				88F56F132BDCC89F00042991 /* Moya */,
+				88DF6ACE2C01C7AD00E835E0 /* RxCocoa */,
+				88DF6AD02C01C7AD00E835E0 /* RxSwift */,
 			);
 			productName = 34th_SOPT_Seminar_Basic;
 			productReference = 88CF1AD12BB7D7C90024E3DB /* 34th_SOPT_Seminar_Basic.app */;
@@ -290,6 +307,7 @@
 				885EA8112BC1283D000AAFE0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				880DC86B2BC68E8300B83A36 /* XCRemoteSwiftPackageReference "Then" */,
 				88F56F122BDCC89F00042991 /* XCRemoteSwiftPackageReference "Moya" */,
+				88DF6ACD2C01C7AD00E835E0 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 88CF1AD22BB7D7C90024E3DB /* Products */;
 			projectDirPath = "";
@@ -331,6 +349,7 @@
 				88A8948A2BD3ADD3005CE2F6 /* ItemModel.swift in Sources */,
 				88A894862BD3A6B0005CE2F6 /* CarrotViewController.swift in Sources */,
 				88A894882BD3AC5C005CE2F6 /* ItemCollectionViewCell.swift in Sources */,
+				88DF6ACC2C01BBF700E835E0 /* LoginViewController_DI.swift in Sources */,
 				88F56F282BDCDB2F00042991 /* UserInfoResponseModel.swift in Sources */,
 				88CF1AE92BB7E4AF0024E3DB /* LoginViewController.swift in Sources */,
 				88F56F182BDCCDE900042991 /* NetworkResult.swift in Sources */,
@@ -592,6 +611,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		88DF6ACD2C01C7AD00E835E0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
 		88F56F122BDCC89F00042991 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -617,6 +644,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 885EA8112BC1283D000AAFE0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		88DF6ACE2C01C7AD00E835E0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DF6ACD2C01C7AD00E835E0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		88DF6AD02C01C7AD00E835E0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DF6ACD2C01C7AD00E835E0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 		88F56F132BDCC89F00042991 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;

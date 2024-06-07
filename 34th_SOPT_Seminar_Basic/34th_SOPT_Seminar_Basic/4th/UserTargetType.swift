@@ -13,6 +13,9 @@ enum UserTargetType {
     case signUp(request: SignUpRequestModel)
 }
 
+// MARK: OCP를 지켜야한다고 생각하여 path, task, method 등을 분리할 수 있겠지만
+// MARK: 이건 DIP를 동시에 만족시키기 위해 TargetType을 Protocol로 만든 것 같다.
+// MARK: struct로 분리하는게 아닌 Protocol로 묶어 나누기.
 extension UserTargetType: TargetType {
     var baseURL: URL {
         return URL(string: Config.baseURL)!
