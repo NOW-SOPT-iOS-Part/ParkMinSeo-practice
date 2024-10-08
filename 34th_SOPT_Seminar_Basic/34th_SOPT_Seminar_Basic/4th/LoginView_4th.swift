@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: OCP를 생각한다면 View를 분리해서 구현하는게 더 좋아보이나,
+// MARK: 반대로 OCP를 생각한다면 확장성이 크게 떨어지기 때문에 좋으면서 나빠보인다.
 final class LoginView_4th: UIView {
     
     private let titleLabel: UILabel = {
